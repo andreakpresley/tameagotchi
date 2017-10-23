@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <title>Tame-agotchi</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/training.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onload="initTrainingScreen()">
+    <div id="mainDiv">
+			<div id="bannerDiv">
+				<img id="banner" src="img/jumpBanner.png" />
+			</div>
+			<div id="hoopsDiv1">
+				<div id="hoop1" class="hoop"><img src="img/Hula w Shadow.png" /></div>
+				<div id="hoop2" class="hoop"><img src="img/Hula w Shadow.png" /></div>
+				<div id="hoop3" class="hoop"><img src="img/Hula w Shadow.png" /></div>
+				<div id="hoop4" class="hoop"><img src="img/Hula w Shadow.png" /></div>
+			</div>
+			<div id="lionDiv">
+					<img id="lionImg" src="img/Lion-Blink2.gif"></img>
+			</div>
+			<div id="levelDiv">
+				<span id="allLevelText">Level: <span id="levelText"></span></span>
+			</div>
+    </div>
+		<div id="instructionsDialog" style="display:none;">
+		  <p class="centeredText" id="instructionsText">Here we go! 5 rounds of jumping!<br /><br />Select the hoop you think the lion will jump through. You must get <span id="numOfHoopsToGetCorrect"></span> hoops correct to pass this level. Good luck :)</p>
+			<button class="closeInstructionsDialogBtn">Okay</button>
+		</div>
+		<div id="correctDialog" style="display:none;">
+		  <p class="centeredText">Way to go!<br /><br />You chose correctly! Keep up the good work..</p>
+			<button class="closeCorrectDialogBtn">Okay</button>
+		</div>
+		<div id="incorrectDialog" style="display:none;">
+		  <p class="centeredText">Oh, no. :(<br /><br />You chose the wrong hoop. Try again!</p>
+			<button class="closeIncorrectDialogBtn">Okay</button>
+		</div>
+		<div id="winDialog" style="display:none;">
+		  <p class="centeredText">Congratulations, you passed!!!<br /><br />You are now a Casual Trainer.</p>
+			<button onclick="goBackToHomeScreen()" class="closeEndOfTrainingDialogBtn">Okay</button>
+		</div>
+		<div id="loseDialog" style="display:none;">
+		  <p class="centeredText">Uh-oh.<br /><br />You didn't guess enough hoops correctly. Get your lion ready for training and try again!</p>
+			<button onclick="goBackToHomeScreen()" class="closeEndOfTrainingDialogBtn">Okay</button>
+		</div>
+</body>
+<script src="js/training.js"></script>
+</html>
