@@ -1,0 +1,21 @@
+button {
+  background-color: Transparent;
+  outline:none;
+  border: none;
+  overflow: hidden;
+}
+
+#beginBtn {
+  width: 300px;
+  height: 78px;
+  background-image: url('../img/Begin.png');
+  margin-top: 50px;
+}
+
+#beginBtn:hover {
+  cursor: pointer;
+}
+
+#lionDiv {
+  margin-top: 55px;
+}
