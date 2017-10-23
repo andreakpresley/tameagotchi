@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <title>Tame-agotchi</title>
+		<link rel="stylesheet" href="https://npmcdn.com/jquery-gray@1.6.0/css/gray.min.css" />
+		<script src="https://npmcdn.com/jquery-gray@1.6.0/js/jquery.gray.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/homeScreen.css">
+</head>
+<body onload="begin()">
+    <div id="mainDiv">
+        <div id="informationDiv">
+						<img id="infoSymbol" src="img/Info Button 2.png" />
+        </div>
+        <div id="beginScreenHeaderDiv">
+					<img id="logo" alt="Tameagotchi logo" src="img/Tame-Agotchi Title.png"  style="width: 50%;"/>
+        </div>
+        <div id="meterAndCommandsDiv">
+            <div id="metersDiv">
+                <meter id="hungerMeter" value="30" max="100" min="0" optimum="10" low="80" high="10"></meter>
+                <meter id="happinessMeter" value="10" max="100" min="0" optimum="100" low="30" high="80"></meter>
+            </div>
+            <div id="commandsDiv">
+                <button id="feedBtn" class="actionBtn" onclick="feedLion()"></button>
+                <button id="petBtn" class="actionBtn" onclick="pet()"></button>
+                <button id="combBtn" class="actionBtn" onclick="comb()"></button>
+                <button id="playBtn" class="actionBtn" onclick="play()"></button>
+            </div>
+        </div>
+        <div id="trainDiv" style="display:none;">
+            <button>Train!</button>
+        </div>
+
+        <div id="lionDiv">
+            <img id="lionImg" src="img/Lion-Blink2.gif"></img>
+        </div>
+    </div>
+</body>
+<script src="js/homeScreen.js"></script>
+</html>
