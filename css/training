@@ -1,0 +1,75 @@
+#banner {
+  width: 80%;
+  margin-top: 50px;
+}
+
+#numOfHoopsToGetCorrect {
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  text-align: center;
+  margin-left: 40%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  opacity: .8;
+  background-color: #69AFB6;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.ui-dialog {
+  background-color: rgba(255,255,255,.9);
+  border: solid;
+  border-width: 2px;
+  border-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.ui-dialog-titlebar {
+  display: none;
+}
+
+#hoopsDiv1 {
+  margin-top: 30px;
+}
+
+#hoopsDiv1 div {
+  display: inline-block;
+  padding: 20px;
+}
+
+#hoopsDiv1 div:hover {
+  cursor: pointer;
+}
+
+#lionDiv {
+  margin-top: -129px;
+}
+
+#levelDiv {
+  margin-top: 15px;
+  float: right;
+  margin-right: 5px;
+}
+
+#allLevelText {
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#levelText {
+  font-weight: bold;
+}
